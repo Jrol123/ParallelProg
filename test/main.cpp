@@ -1,14 +1,23 @@
+#include "stdio.h"
+#include "mpi.h"
+#include "stdlib.h"
+#include "math.h"
 
+int ProcNum;
+int ProcRank;
 
-// C++ program to illustrate the use
-// of cout object
-#include <iostream>
-using namespace std;
- 
-// Driver Code
-int main()
+int main(int argc, char *argv[])
 {
-    cout << "Welcome to GFG";
- 
-    return 0;
+
+    MPI_Status status;
+
+    MPI_Init(&argc, &argv);
+
+    MPI_Comm_rank(MPI_COMM_WORLD, &ProcRank);
+
+    MPI_Comm_size(MPI_COMM_WORLD, &ProcNum);
+
+    printf("From process %i: Hello, World!\n", ProcRank);
+
+    MPI_Finalize();
 }
