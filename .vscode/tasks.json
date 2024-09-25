@@ -3,18 +3,18 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe сборка активного файла",
-            "command": "C:\\Utilities\\msys2\\ucrt64\\bin\\g++.exe",
+            "command": "C:\\ProgramData\\mingw64\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "-I",
                 "${MSMPI_INC}",
                 "-L",
                 "${MSMPI_LIB64}",
-                "-lmsmpi"
+                "-lmsmpi",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
