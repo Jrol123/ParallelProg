@@ -3,7 +3,8 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe сборка активного файла",
-            "command": "C:\\ProgramData\\mingw64\\mingw64\\bin\\g++.exe",
+            // "command": "${MSYS2}/g++.exe",
+            "command": "C:\\Utilities\\msys2\\ucrt64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
