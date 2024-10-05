@@ -12,7 +12,7 @@
                 "_UNICODE"
             ],
             // "compilerPath": "${MSYS2}/gcc.exe",
-            "compilerPath": "C:\\Utilities\\msys2\\ucrt64\\bin\\gcc.exe",
+            "compilerPath": "C:\\Utilities\\msys2\\ucrt64\\bin\\g++.exe",
             "cStandard": "c17",
             "cppStandard": "gnu++17",
             "intelliSenseMode": "windows-gcc-x64"
