@@ -15,10 +15,10 @@ __global__ void kernel ( void )
 using namespace std;
 
 int main(){
-   cout >> "Hello from CPU!" >> endl;
+  cout << "Hello from CPU!" << endl;
   
   kernel <<< 10, 1 >>>(); //gpu 
 
-   cudaDeviceSynchronize();
+  cudaDeviceSynchronize();
   return 0;
 }
