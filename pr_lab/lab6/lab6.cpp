@@ -76,7 +76,11 @@ int main(int argc, char **argv)
 
     double start_time = MPI_Wtime();
 
-    MPI_Scatterv();
+    // MPI_Scatterv();
+
+    
+
+    // MPI_Gather();
 
     double end_time = MPI_Wtime();
     
