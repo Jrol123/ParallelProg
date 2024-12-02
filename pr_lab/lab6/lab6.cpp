@@ -42,7 +42,6 @@ void multiply_matrices_parallel(int rank, int size, const std::vector<int> &matr
 
 int main(int argc, char **argv)
 {
-    // TODO: Распихивать матрицу на проциональное количество потоков
     MPI_Init(&argc, &argv);
     int rank, size;
     int sid = 0;
