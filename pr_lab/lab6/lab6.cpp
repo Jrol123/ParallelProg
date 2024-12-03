@@ -6,10 +6,10 @@
 #include <vector>
 using namespace std;
 
-const bool PRINT = false;
+const bool PRINT = true;
 
 const int MAIN_PROCESS = 0;
-const int TOTAL_SIZE = 1000;
+const int TOTAL_SIZE = 2;
 
 void output_matrix(vector<int> &matrix)
 {
@@ -63,8 +63,8 @@ int main(int argc, char **argv)
         {
             for (int j = 0; j < TOTAL_SIZE; j++)
             {
-                matrixA[i * TOTAL_SIZE + j] = 1 + ((double)rand() / RAND_MAX) * 100;
-                matrixB[i * TOTAL_SIZE + j] = 1 + ((double)rand() / RAND_MAX) * 100;
+                matrixA[i * TOTAL_SIZE + j] = 1 + ((double)rand() / RAND_MAX) * 10;
+                matrixB[i * TOTAL_SIZE + j] = 1 + ((double)rand() / RAND_MAX) * 10;
             }
         }
         if (PRINT)
